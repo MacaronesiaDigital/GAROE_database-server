@@ -1,0 +1,14 @@
+###
+GET http://localhost:4000/api/users
+
+###
+PUT http://localhost:4000/api/users/62a9f5e524ca564284b2b122
+Content-Type: application/json
+
+{
+    "session": "PEPE",
+    "name": "Pepito Grillo",
+    "mail": "pepe@gmail.com",
+    "crops": []
+    
+}
