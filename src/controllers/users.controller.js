@@ -11,10 +11,11 @@ userCtrl.getUsers = async (req, res) => {
 userCtrl.createUser = async (req, res) => {
     
     const newUser = new User(req.body)
-
+    console.log(req.body)
     await newUser.save()
     res.send({message: "User Created"})
-    console.log("USUARIO CREADO")
+    
+    console.log("USUARIO CREADOoo")
 }
 userCtrl.getUser = async (req, res) => {  
     console.log (req.params);
@@ -27,6 +28,7 @@ userCtrl.editUser = async (req, res) => {
 }
 userCtrl.deleteUser = async (req, res) => {
     const user = await User.findByIdAndDelete(req.params.id);
+    console.log(req)
     console.log("Deleted")
 }
 userCtrl.filtraUser = async (req, res)=>{
