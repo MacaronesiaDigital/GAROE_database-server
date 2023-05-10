@@ -17,6 +17,12 @@ siarDataCtrl.updateStations = async (req, res) => {
     console.log("Siar Updated")
 }
 
+siarDataCtrl.deleteStations = async (req, res) => {
+    await Siardata.deleteMany({})
+    res.send({message: "Siar Updated"})
+    console.log("Siar Updated")
+}
+
 
 
 module.exports = siarDataCtrl;

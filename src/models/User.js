@@ -7,10 +7,10 @@ const userSchema = new Schema({
     name: {type: String, required: false},
     lastName: {type: String, required: false},
     mail: {type: String, required: false},
-    location:{type: String, required: false},
-    lat: {type: Number, required: false},
-    lon: {type: Number, required: false},
-    crops: {type: [], required: true},
+    crops: {type: Array, required: false},
+    muffins: {type: Object, required:false},
+    policyAcceptance: {type: Boolean, required:true},
+    fieldNotebook : {type: Object, required:false},
     
 },{
 
